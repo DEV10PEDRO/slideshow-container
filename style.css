@@ -1,84 +1,84 @@
 
 /* altera modelo de caixa e calcula largura e altura dos elementos*/
 * {
-    box-sizing: border-box
+    box-sizing: border-box  /* */
 }
 /* Define a largura máxima do contêiner como 1000 pixels e centraliza horizontalmente na página, proporcionando um limite visual e alinhamento central.
 css
 */
 .slideshow-container {
-    max-width: 1000px;
-    position: relative;
-    margin: auto;
+    max-width: 1000px; /* Define a largura máxima de um elemento */
+    position: relative; /* Define a posição de um elemento de acordo com o fluxo normal do documento */
+    margin: auto; /* propriedade que define a margem dos quatros lados do elementos */
 }
-/* retira o elemento do documento */
+
 .mySlides {
-    display: none;
+    display: none; /* É ultilizado para dizer que o elemento não deve ser exibido na pagina, ficando invisivel não ocupando espaço. */
 }
 /* */
 .anterior,
 .proximo {
-    cursor: pointer;
-    position: absolute;
-    top: 50%;
-    width: auto;
-    margin-top: -22px;
-    padding: 16px;
-    color: white;
-    font-weight: bold;
-    font-size: 18px;
-    transition: 0.6s ease;
-    border-radius: 0 3px 3px 0;
-    user-select: none;
+    cursor: pointer; /* Define a aparencia do cursor ao passar o mouse sobre um elemento  */
+    position: absolute; /* Especifica o método de posicionamento usado para um elemento */
+    top: 50%; /*Uma propriedade que posiciona um elemento verticalmente em relaçao ao seu bloco ou seu ancestral posicionado mais próximo */
+    width: auto; /* Define a largura da àrea de conteúdo de um elemento*/
+    margin-top: -22px; /* Define uma margem superior do elemento*/
+    padding: 16px; /* É ultilizado para definir uma distância  entre o conteúdo de um elemento e suas bordas  */
+    color: white; /* Define a cor do texto */
+    font-weight: bold; /* Define a espessuras da fonte */
+    font-size: 18px; /* Define tamanho da fonte */
+    transition: 0.6s ease; /* é usado para criar transições suaves para propriedades CSS ao longo de 0,6 segundos, usando uma função de temporização "facilitada". */
+    border-radius: 0 3px 3px 0; /* Arredonda cantos de uma caixa   */
+    user-select: none; /* Especifica se o texto de um elemento pode ser selecionado. */
 }
 /* */
 .proximo {
-    right: 0;
-    border-radius: 3px 0 0 3px;
+    right: 0; /* Define a distancia entre borda e o bloco alinhando seus elementos.  */
+    border-radius: 3px 0 0 3px; /* Arredonda cantos de uma caixa */
 }
 /* */
 .anterior:hover,
 .proximo:hover {
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: rgba(0, 0, 0, 0.8); /* Define cor de fundo da pagina */
 }
 /* */
 .text {
-    color: #f2f2f2;
-    font-size: 15px;
-    padding: 8px 12px;
-    position: absolute;
-    bottom: 8px;
-    width: 100%;
-    text-align: center;
+    color: #f2f2f2; /*  Define a cor do texto */
+    font-size: 15px; /*  Define tamanho da fonte */
+    padding: 8px 12px; /* É usado para criar espaço ao redor do conteúdo de um elemento, dentro de quaisquer bordas definidas. */
+    position: absolute; /* Especifica o método de posicionamento usado para um elemento */
+    bottom: 8px; /* É uma propriedade para afeta a posição vertical de um elemento posicionado.*/
+    width: 100%; /* propriedade define a largura de um elemento.*/
+    text-align: center; /* propriedade especifica o alinhamento horizontal do texto em um elemento. */
 }
 /* */
 .numbertext {
-    color: #f2f2f2;
-    font-size: 12px;
-    padding: 8px 12px;
-    position: absolute;
-    top: 0;
+    color: #f2f2f2; /*  Define a cor do texto */
+    font-size: 12px; /*  Define tamanho da fonte */
+    padding: 8px 12px; /* É usado para criar espaço ao redor do conteúdo de um elemento, dentro de quaisquer bordas definidas. */
+    position: absolute; /* Especifica o método de posicionamento usado para um elemento */
+    top: 0; /* propriedade afeta a posição vertical de um elemento posicionado. Esta propriedade não tem efeito em elementos não posicionados. */
 }
 /* */
 .ponto {
-    cursor: pointer;
-    height: 15px;
-    width: 15px;
-    margin: 0 2px;
-    background-color: #bbb;
-    border-radius: 50%;
-    display: inline-block;
-    transition: background-color 0.6s ease;
+    cursor: pointer; /* propriedade especifica o cursor do mouse a ser exibido ao apontar sobre um elemento. */
+    height: 15px; /* propriedade define a altura de um elemento. */
+    width: 15px; /* propriedade define a largura de um elemento. */
+    margin: 0 2px; /* */
+    background-color: #bbb; /* */
+    border-radius: 50%; /* Arredonda cantos de uma caixa */
+    display: inline-block; /* */
+    transition: background-color 0.6s ease; /* */
 }
 /* */
 .active,
 .ponto:hover {
-    background-color: #717171;
+    background-color: #717171; /* Define cor de fundo da pagina De */
 }
 /* */
 .fade {
-    animation-name: fade;
-    animation-duration: 2.5s;
+    animation-name: fade; /* */
+    animation-duration: 2.5s; /* */
 }
 /* */
 @keyframes fade {
