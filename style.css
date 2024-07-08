@@ -64,29 +64,29 @@ css
     cursor: pointer; /* propriedade especifica o cursor do mouse a ser exibido ao apontar sobre um elemento. */
     height: 15px; /* propriedade define a altura de um elemento. */
     width: 15px; /* propriedade define a largura de um elemento. */
-    margin: 0 2px; /* */
-    background-color: #bbb; /* */
+    margin: 0 2px; /*define a margem superior e inferior como 0 e margem esquerda e direita como 2px*/
+    background-color: #bbb; /*Define a cor do fundo */
     border-radius: 50%; /* Arredonda cantos de uma caixa */
-    display: inline-block; /* */
-    transition: background-color 0.6s ease; /* */
+    display: inline-block; /* permite definir uma largura e altura no elemento. */
+    transition: background-color 0.6s ease; /*Faz uma transição suave na propriedade background-color com duraçaõ de 0.6s de forma suave. */
 }
 /* */
 .active,
 .ponto:hover {
-    background-color: #717171; /* Define cor de fundo da pagina De */
+    background-color: #717171; /* Define cor de fundo da pagina */
 }
 /* */
 .fade {
-    animation-name: fade; /* */
-    animation-duration: 2.5s; /* */
+    animation-name: fade; /* Especifica o nome da animação a ser aplicada no fade */
+    animation-duration: 2.5s; /* Define a duração em 2.5s segundos */
 }
 /* */
 @keyframes fade {
     from {
-        opacity: .2
+        opacity: .2 /* Estado inicial de uma animação. Define que o elemento começe com .2 ou 20% de opcacidade. */ 
     }
 
     to {
-        opacity: 1
+        opacity: 1 /* Estado final de uma animação com opacidade de 1 e 100% */
     }
 }
